@@ -16,7 +16,7 @@ def home():
     larger_image_path = 'static/larger_image.jpg'
 
     # Render the template with the image paths
-    return render_template('index.html', smaller_images=smaller_image_files, larger_image=larger_image_path)
+    return render_template('./templates/index.html', smaller_images=smaller_image_files, larger_image=larger_image_path)
 
 if __name__ == '__main__':
     # Run the Flask app
