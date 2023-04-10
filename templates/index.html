@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mosaic Image</title>
+</head>
+<body>
+    <h1>Mosaic Image</h1>
+    <img src="{{ larger_image }}" width="500" height="500">
+    <br>
+    {% for smaller_image in smaller_images %}
+        <img src="{{ url_for('static', filename='smaller_images/' + smaller_image) }}" width="10" height="10" style="display: inline;">
+    {% endfor %}
+</body>
+</html>
